@@ -7,4 +7,5 @@ public interface RecipeProjection {
     Integer getHit();
     Integer getLikecount();
     Integer getNum();
+    String getTitle();
 }
