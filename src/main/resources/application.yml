@@ -1,0 +1,19 @@
+#port
+server:
+  port: 80
+#데이터베이스 설정
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: hr
+    password: happy
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+  jpa: 
+    database: oracle
+    properties:
+      hibernate: 
+        dialect: org.hibernate.dialect.OracleDialect
+        storage_engine: innodb
+        show_sql: true
+        format_sql: true
+        user_sql_comments: true
